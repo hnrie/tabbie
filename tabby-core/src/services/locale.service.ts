@@ -24,6 +24,7 @@ import localeSRSP from '@angular/common/locales/sr-Cyrl'
 import localeSV from '@angular/common/locales/sv'
 import localeTR from '@angular/common/locales/tr'
 import localeUK from '@angular/common/locales/uk'
+import localeVI from '@angular/common/locales/vi'
 import localeZH from '@angular/common/locales/zh'
 import { Observable, Subject } from 'rxjs'
 import { distinctUntilChanged } from 'rxjs/operators'
@@ -51,6 +52,7 @@ registerLocaleData(localeSRSP)
 registerLocaleData(localeSV)
 registerLocaleData(localeTR)
 registerLocaleData(localeUK)
+registerLocaleData(localeVI)
 registerLocaleData(localeZH)
 
 function flattenMessageFormatTranslation (po: any) {
@@ -143,6 +145,10 @@ export class LocaleService {
         {
             code: 'tr-TR',
             name: 'Türkçe',
+        },
+        {
+            code: 'vi-VN',
+            name: 'Tiếng Việt',
         },
         {
             code: 'bg-BG',
